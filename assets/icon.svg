@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="vd-title vd-desc">
+  <title id="vd-title">visual-decode</title>
+  <desc id="vd-desc">A framed image layered over a color palette and a structural grid, showing a visual work being decoded into its parts.</desc>
+
+  <defs>
+    <linearGradient id="vd-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16233D"/>
+      <stop offset="1" stop-color="#080D18"/>
+    </linearGradient>
+    <radialGradient id="vd-glow-a" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5EEAD4" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#5EEAD4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vd-glow-b" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#60A5FA" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#60A5FA" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="vd-clip">
+      <rect width="512" height="512" rx="112"/>
+    </clipPath>
+    <filter id="vd-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#vd-bg)"/>
+  <g clip-path="url(#vd-clip)">
+    <circle cx="140" cy="110" r="220" fill="url(#vd-glow-a)"/>
+    <circle cx="420" cy="420" r="200" fill="url(#vd-glow-b)"/>
+  </g>
+  <rect x="1" y="1" width="510" height="510" rx="111" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="2"/>
+
+  <!-- back layer: structure -->
+  <g>
+    <rect x="204" y="92" width="232" height="184" rx="32" fill="#0C1526" stroke="#60A5FA" stroke-opacity="0.55" stroke-width="4"/>
+    <rect x="232" y="112" width="64" height="12" rx="6" fill="#60A5FA" opacity="0.8"/>
+    <rect x="308" y="112" width="36" height="12" rx="6" fill="#60A5FA" opacity="0.35"/>
+    <rect x="356" y="112" width="48" height="12" rx="6" fill="#60A5FA" opacity="0.5"/>
+    <path d="M232 140 H404" stroke="#60A5FA" stroke-opacity="0.4" stroke-width="3" stroke-linecap="round"/>
+    <path d="M396 112 V156 M420 112 V156 M396 134 H420" stroke="#60A5FA" stroke-opacity="0.38" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- middle layer: palette -->
+  <g>
+    <rect x="148" y="148" width="232" height="184" rx="32" fill="#0C1526" stroke="#FBBF24" stroke-opacity="0.65" stroke-width="4"/>
+    <rect x="176" y="166" width="64" height="12" rx="6" fill="#FBBF24" opacity="0.8"/>
+    <rect x="248" y="166" width="36" height="12" rx="6" fill="#FBBF24" opacity="0.35"/>
+    <path d="M370 160 V248" stroke="#FBBF24" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="344" cy="174" r="12" fill="#FB7185"/>
+    <circle cx="344" cy="202" r="12" fill="#FBBF24"/>
+    <circle cx="344" cy="230" r="12" fill="#5EEAD4"/>
+  </g>
+
+  <!-- front layer: the image being decoded -->
+  <g filter="url(#vd-shadow)">
+    <rect x="92" y="204" width="232" height="184" rx="32" fill="#F4F1E8"/>
+    <circle cx="268" cy="246" r="24" fill="#F59E0B"/>
+    <path d="M262 236 L262 256 L278 246 Z" fill="#0B1220"/>
+    <path d="M112 362 L176 282 L212 318 L252 264 L304 362 Z" fill="#0F766E"/>
+    <path d="M236 362 L272 316 L304 362 Z" fill="#14B8A6"/>
+    <path d="M112 362 H304" stroke="#0B1220" stroke-opacity="0.15" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- decode timeline -->
+  <g>
+    <path d="M104 430 H408" stroke="#5EEAD4" stroke-opacity="0.28" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 12"/>
+    <circle cx="104" cy="430" r="4" fill="#5EEAD4" opacity="0.85"/>
+    <circle cx="256" cy="430" r="4" fill="#FBBF24" opacity="0.85"/>
+    <circle cx="408" cy="430" r="4" fill="#FB7185" opacity="0.85"/>
+  </g>
+</svg>
