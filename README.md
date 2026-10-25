@@ -2,6 +2,8 @@
 
 给自媒体创作者用的逆向拆解工具。
 
+GitHub 仓库：<https://github.com/da-damu/dadamu-visual-decode>
+
 你发来一条视频、一个网站、一个 App 界面或一张图，它告诉你：
 
 1. 画面里到底有哪些可见元素
