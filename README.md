@@ -240,4 +240,4 @@ npx playwright install chromium
 
 ## 许可
 
-MIT，见 [LICENSE](./LICENSE)。
+MIT，见 [LICENSE.md](./LICENSE.md)。
